@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class FavoritProductItem(Document):
+class FavoritesListGiverItem(Document):
 	pass

@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:GIV-{YYYY}-{######}",
+ "autoname": "format:GIV-{user_name}",
  "creation": "2024-08-15 13:27:27.342632",
  "default_view": "List",
  "doctype": "DocType",
@@ -15,7 +15,7 @@
   "last_name",
   "address",
   "products_section",
-  "givers_products"
+  "products"
  ],
  "fields": [
   {
@@ -64,18 +64,18 @@
    "label": "Products"
   },
   {
-   "fieldname": "givers_products",
+   "fieldname": "products",
    "fieldtype": "Table",
-   "label": "Givers Products",
+   "label": "Products",
    "options": "Product Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 15:54:29.588583",
+ "modified": "2024-08-16 09:26:27.656880",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Giver",
+ "name": "Giver Profile",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

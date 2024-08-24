@@ -20,15 +20,15 @@
    "fieldname": "givers",
    "fieldtype": "Table",
    "label": "Givers",
-   "options": "Favorit Giver Item"
+   "options": "Favorites List Giver Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 16:08:25.239381",
+ "modified": "2024-08-24 15:27:07.410958",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Favorit List Giver",
+ "name": "Favorites List Givers",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

@@ -1,35 +1,35 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-08-15 16:07:38.818022",
+ "creation": "2024-08-15 16:01:42.835661",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "is_alert_enabled",
-  "giver"
+  "product"
  ],
  "fields": [
   {
-   "fieldname": "giver",
+   "fieldname": "product",
    "fieldtype": "Link",
-   "label": "Giver",
-   "options": "Giver"
+   "label": "Product",
+   "options": "Product"
   },
   {
    "default": "0",
    "fieldname": "is_alert_enabled",
    "fieldtype": "Check",
-   "label": "is alert enabled"
+   "label": "is alert enabled?"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-08-15 18:02:47.591861",
+ "modified": "2024-08-16 09:11:33.896099",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Favorit Giver Item",
+ "name": "Watch List Product Item",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "creation",

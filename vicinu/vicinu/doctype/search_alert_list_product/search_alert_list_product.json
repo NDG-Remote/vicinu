@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:SAP-{taker_user_name}",
+ "autoname": "format:SLP-{taker_user_name}",
  "creation": "2024-08-15 17:32:51.043650",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -38,7 +38,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 18:06:29.454171",
+ "modified": "2024-08-24 15:27:26.477790",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Search Alert List Product",

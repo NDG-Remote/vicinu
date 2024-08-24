@@ -5,7 +5,12 @@ import frappe
 from frappe.model.document import Document
 
 
-class FavoritListProduct(Document):
+class GiverProfile(Document):
     def before_naming(self):
+        user_email = frappe.get_value("User", self.owner, "email")
         user_name = frappe.get_value("User", self.owner, "username")
-        self.taker_user_name = user_name
+        self.user_email = user_email
+        self.user_name = user_name
+
+
+

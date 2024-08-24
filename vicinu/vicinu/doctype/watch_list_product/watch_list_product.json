@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:FLP-{taker_user_name}",
+ "autoname": "format:WLP-{taker_user_name}",
  "creation": "2024-08-15 15:58:58.324010",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -20,15 +20,15 @@
    "fieldname": "products",
    "fieldtype": "Table",
    "label": "Products",
-   "options": "Product Item"
+   "options": "Watch List Product Item"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 16:10:19.471048",
+ "modified": "2024-08-24 15:25:17.701114",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Favorit List Product",
+ "name": "Watch List Product",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

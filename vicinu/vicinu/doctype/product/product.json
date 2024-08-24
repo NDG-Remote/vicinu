@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:PRO-{giver_user_name}-{#####}",
+ "autoname": "format:PRO-{giver_user_name}-{######}",
  "creation": "2024-08-15 13:08:28.609035",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -112,7 +112,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 15:41:33.752371",
+ "modified": "2024-08-16 09:36:02.747955",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Product",
