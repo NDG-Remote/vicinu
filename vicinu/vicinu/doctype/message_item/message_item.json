@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-19 17:07:11.299327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "message",
+  "datetime",
+  "message_owner"
+ ],
+ "fields": [
+  {
+   "fieldname": "message",
+   "fieldtype": "Link",
+   "label": "Message",
+   "options": "Message"
+  },
+  {
+   "fetch_from": "message.datetime",
+   "fieldname": "datetime",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Datetime"
+  },
+  {
+   "fetch_from": "message.message_owner_taker_profile",
+   "fieldname": "message_owner",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Message Owner"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-19 17:12:43.736579",
+ "modified_by": "Administrator",
+ "module": "Vicinu",
+ "name": "Message Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

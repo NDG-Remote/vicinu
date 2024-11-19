@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class SearchAlertProductItem(Document):
+class Offer(Document):
 	pass

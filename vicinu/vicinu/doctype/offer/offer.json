@@ -1,0 +1,161 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:OFF-{user_name}-{product}-{#####}",
+ "creation": "2024-11-19 15:44:28.245816",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "giver_profile",
+  "product",
+  "column_break_cnwt",
+  "is_available",
+  "is_accessible",
+  "is_donation_required",
+  "description",
+  "quantity_section",
+  "is_unlimited",
+  "quantity",
+  "units",
+  "location_section",
+  "location",
+  "images_section",
+  "image",
+  "image_2",
+  "image_3",
+  "image_4",
+  "image_5"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_available",
+   "fieldtype": "Check",
+   "label": "Available"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_accessible",
+   "fieldtype": "Check",
+   "label": "Accessible"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_donation_required",
+   "fieldtype": "Check",
+   "label": "Donation required"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_cnwt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Quantity"
+  },
+  {
+   "depends_on": "eval:doc.is_unlimited==0",
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "mandatory_depends_on": "eval:doc.is_unlimited==1"
+  },
+  {
+   "depends_on": "eval:doc.is_unlimited==0",
+   "fieldname": "units",
+   "fieldtype": "Select",
+   "label": "Units",
+   "mandatory_depends_on": "eval:doc.is_unlimited==1",
+   "options": "Units\nKilograms\nBaskets"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_unlimited",
+   "fieldtype": "Check",
+   "label": "is Unlimited"
+  },
+  {
+   "fieldname": "giver_profile",
+   "fieldtype": "Link",
+   "label": "Giver Profile",
+   "options": "Giver Profile"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "images_section",
+   "fieldtype": "Section Break",
+   "label": "Images"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "image_2",
+   "fieldtype": "Attach Image",
+   "label": "Image 2"
+  },
+  {
+   "fieldname": "image_3",
+   "fieldtype": "Attach Image",
+   "label": "Image 3"
+  },
+  {
+   "fieldname": "image_4",
+   "fieldtype": "Attach Image",
+   "label": "Image 4"
+  },
+  {
+   "fieldname": "image_5",
+   "fieldtype": "Attach Image",
+   "label": "Image 5"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-19 16:18:18.516201",
+ "modified_by": "Administrator",
+ "module": "Vicinu",
+ "name": "Offer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

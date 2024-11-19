@@ -1,122 +1,27 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:PRO-{giver_user_name}-{######}",
- "creation": "2024-08-15 13:08:28.609035",
+ "autoname": "prompt",
+ "creation": "2024-11-19 16:27:19.764033",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "is_available",
-  "product_type",
-  "is_donation_welcome",
-  "description",
-  "column_break_lany",
-  "giver_user_name",
-  "is_messaging_enabled",
-  "image",
-  "quantity_section",
-  "is_unlimited",
-  "column_break_zfdj",
-  "quantity",
-  "unit",
-  "location_section",
-  "location"
+  "description"
  ],
  "fields": [
-  {
-   "fieldname": "product_type",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Product Type",
-   "options": "Product Type",
-   "reqd": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "is_donation_welcome",
-   "fieldtype": "Check",
-   "label": "is Donation welcome"
-  },
-  {
-   "fieldname": "column_break_lany",
-   "fieldtype": "Column Break"
-  },
-  {
-   "default": "1",
-   "fieldname": "is_messaging_enabled",
-   "fieldtype": "Check",
-   "label": "Is messaging enabled"
-  },
-  {
-   "fieldname": "quantity_section",
-   "fieldtype": "Section Break",
-   "label": "Quantity"
-  },
-  {
-   "default": "1",
-   "fieldname": "is_unlimited",
-   "fieldtype": "Check",
-   "label": "is unlimited"
-  },
-  {
-   "depends_on": "eval:doc.is_unlimited == \"0\"",
-   "fieldname": "quantity",
-   "fieldtype": "Int",
-   "label": "Quantity",
-   "mandatory_depends_on": "eval:doc.is_unlimited == \"0\""
-  },
-  {
-   "fieldname": "column_break_zfdj",
-   "fieldtype": "Column Break"
-  },
-  {
-   "depends_on": "eval:doc.is_unlimited == \"0\"",
-   "fieldname": "unit",
-   "fieldtype": "Select",
-   "label": "Unit",
-   "mandatory_depends_on": "eval:doc.is_unlimited == \"0\"",
-   "options": "Units\nKilograms\nBaskets"
-  },
-  {
-   "fieldname": "location_section",
-   "fieldtype": "Section Break",
-   "label": "Location"
-  },
-  {
-   "fieldname": "location",
-   "fieldtype": "Geolocation",
-   "label": "Location"
-  },
   {
    "fieldname": "description",
    "fieldtype": "Small Text",
    "label": "Description"
-  },
-  {
-   "default": "1",
-   "fieldname": "is_available",
-   "fieldtype": "Check",
-   "label": "is Available"
-  },
-  {
-   "fieldname": "giver_user_name",
-   "fieldtype": "Data",
-   "label": "Giver User Name",
-   "read_only": 1
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-16 09:36:02.747955",
+ "modified": "2024-11-19 16:28:02.563213",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Product",
- "naming_rule": "Expression",
+ "naming_rule": "Set by user",
  "owner": "Administrator",
  "permissions": [
   {
@@ -132,7 +37,7 @@
    "write": 1
   }
  ],
- "sort_field": "creation",
+ "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
 }

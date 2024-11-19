@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestSearchAlertListProduct(FrappeTestCase):
+class TestOffer(FrappeTestCase):
 	pass

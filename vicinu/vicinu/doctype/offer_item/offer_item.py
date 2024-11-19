@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class WatchListProductItem(Document):
+class OfferItem(Document):
 	pass

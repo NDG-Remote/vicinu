@@ -1,27 +1,34 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "prompt",
- "creation": "2024-08-15 13:24:09.013350",
+ "autoname": "format:TAK-{username}-{#####}",
+ "creation": "2024-11-19 16:52:42.526930",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "description"
+  "user",
+  "username"
  ],
  "fields": [
   {
-   "fieldname": "description",
-   "fieldtype": "Small Text",
-   "label": "Description"
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fetch_from": "user.username",
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 13:25:02.686769",
+ "modified": "2024-11-19 16:56:22.784090",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Product Type",
- "naming_rule": "Set by user",
+ "name": "Taker Profile",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -37,7 +44,7 @@
    "write": 1
   }
  ],
- "sort_field": "creation",
+ "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
 }

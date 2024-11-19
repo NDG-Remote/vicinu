@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFavoritesListGivers(FrappeTestCase):
+class TestTakerProfile(FrappeTestCase):
 	pass

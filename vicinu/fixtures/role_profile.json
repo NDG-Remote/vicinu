@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-11-19 16:20:04.974598",
+  "name": "Giver RP",
+  "role_profile": "Giver RP",
+  "roles": [
+   {
+    "parent": "Giver RP",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "V-Giver"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Role Profile",
+  "modified": "2024-11-19 16:20:16.636473",
+  "name": "Taker RP",
+  "role_profile": "Taker RP",
+  "roles": [
+   {
+    "parent": "Taker RP",
+    "parentfield": "roles",
+    "parenttype": "Role Profile",
+    "role": "V-Taker"
+   }
+  ]
+ }
+]

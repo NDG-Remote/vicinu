@@ -1,30 +1,50 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:MES-{user_name}-{##########}",
+ "autoname": "format:MES-{product_chat}-{###########}",
  "creation": "2024-08-15 16:29:43.544094",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "user_name",
-  "message"
+  "product_chat",
+  "message_owner_taker_profile",
+  "column_break_covr",
+  "datetime",
+  "message_text"
  ],
  "fields": [
   {
-   "fieldname": "user_name",
-   "fieldtype": "Data",
-   "label": "User Name",
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "Datetime",
    "read_only": 1
   },
   {
-   "fieldname": "message",
-   "fieldtype": "Text",
-   "label": "Message"
+   "fieldname": "product_chat",
+   "fieldtype": "Link",
+   "label": "Product Chat",
+   "options": "Product Chat",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_covr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "message_text",
+   "fieldtype": "Small Text",
+   "label": "Message Text"
+  },
+  {
+   "fieldname": "message_owner_taker_profile",
+   "fieldtype": "Link",
+   "label": "Message Owner Taker Profile",
+   "options": "Taker Profile"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-08-15 17:53:37.431030",
+ "modified": "2024-11-19 17:09:41.296209",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Message",
