@@ -6,7 +6,10 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "ownership_section",
   "giver_profile",
+  "user",
+  "product_section",
   "product",
   "column_break_cnwt",
   "is_available",
@@ -15,16 +18,26 @@
   "description",
   "quantity_section",
   "is_unlimited",
+  "column_break_oxbn",
   "quantity",
   "units",
-  "location_section",
-  "location",
   "images_section",
-  "image",
+  "image_1",
+  "image_display_1",
+  "column_break_ftme",
   "image_2",
+  "image_display_2",
+  "column_break_sdzq",
   "image_3",
+  "image_display_3",
+  "column_break_ugfr",
   "image_4",
-  "image_5"
+  "image_display_4",
+  "column_break_ihhq",
+  "image_5",
+  "image_display_5",
+  "location_section",
+  "location"
  ],
  "fields": [
   {
@@ -49,8 +62,10 @@
   {
    "fieldname": "product",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Product",
-   "options": "Product"
+   "options": "Product",
+   "reqd": 1
   },
   {
    "fieldname": "description",
@@ -71,14 +86,14 @@
    "fieldname": "quantity",
    "fieldtype": "Int",
    "label": "Quantity",
-   "mandatory_depends_on": "eval:doc.is_unlimited==1"
+   "mandatory_depends_on": "eval:doc.is_unlimited==0"
   },
   {
    "depends_on": "eval:doc.is_unlimited==0",
    "fieldname": "units",
    "fieldtype": "Select",
    "label": "Units",
-   "mandatory_depends_on": "eval:doc.is_unlimited==1",
+   "mandatory_depends_on": "eval:doc.is_unlimited==0",
    "options": "Units\nKilograms\nBaskets"
   },
   {
@@ -91,7 +106,8 @@
    "fieldname": "giver_profile",
    "fieldtype": "Link",
    "label": "Giver Profile",
-   "options": "Giver Profile"
+   "options": "Giver Profile",
+   "reqd": 1
   },
   {
    "fieldname": "location_section",
@@ -107,11 +123,6 @@
    "fieldname": "images_section",
    "fieldtype": "Section Break",
    "label": "Images"
-  },
-  {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image 1"
   },
   {
    "fieldname": "image_2",
@@ -132,11 +143,82 @@
    "fieldname": "image_5",
    "fieldtype": "Attach Image",
    "label": "Image 5"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "image_1",
+   "fieldtype": "Attach Image",
+   "label": "Image 1"
+  },
+  {
+   "fieldname": "image_display_1",
+   "fieldtype": "Image",
+   "label": "Image Display 1",
+   "options": "image_1"
+  },
+  {
+   "fieldname": "column_break_ftme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_display_2",
+   "fieldtype": "Image",
+   "label": "Image Display 2",
+   "options": "image_2"
+  },
+  {
+   "fieldname": "column_break_sdzq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_display_3",
+   "fieldtype": "Image",
+   "label": "Image Display 3",
+   "options": "image_3"
+  },
+  {
+   "fieldname": "column_break_ugfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_display_4",
+   "fieldtype": "Image",
+   "label": "Image Display 4",
+   "options": "image_4"
+  },
+  {
+   "fieldname": "column_break_ihhq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image_display_5",
+   "fieldtype": "Image",
+   "label": "Image Display 5",
+   "options": "image_5"
+  },
+  {
+   "fieldname": "column_break_oxbn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ownership_section",
+   "fieldtype": "Section Break",
+   "label": "Ownership"
+  },
+  {
+   "fieldname": "product_section",
+   "fieldtype": "Section Break",
+   "label": "Product"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-20 08:58:55.753843",
+ "modified": "2024-11-20 14:35:30.819117",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",

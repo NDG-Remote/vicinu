@@ -140,6 +140,7 @@ after_install = "vicinu.install.after_install"
 doc_events = {
 	"User": {
 		"before_insert": "vicinu.api.add_taker_role_profile",
+        "on_update": "vicinu.api.create_taker_profile"
 	},
 	# "*": {
 	# 	"on_update": "method",

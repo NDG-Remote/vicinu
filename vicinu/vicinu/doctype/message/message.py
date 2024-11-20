@@ -6,6 +6,8 @@ from frappe.model.document import Document
 
 
 class Message(Document):
-    def before_naming(self):
-        user_name = frappe.get_value("User", self.owner, "username")
-        self.user_name = user_name
+    def validate(self):
+        self.set_datetime_field()
+
+    def set_datetime_field(self):
+        pass

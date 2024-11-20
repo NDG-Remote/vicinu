@@ -6,13 +6,16 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "profile_image",
-  "taker_user",
+  "taker_profile",
+  "user",
   "username",
   "column_break_dhsp",
   "first_name",
   "last_name",
-  "user_bio",
+  "bio",
+  "column_break_yzqd",
+  "profile_image",
+  "image",
   "offers_section",
   "offers"
  ],
@@ -20,23 +23,16 @@
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First name",
-   "permlevel": 1
+   "label": "First name"
   },
   {
    "fieldname": "last_name",
    "fieldtype": "Data",
-   "label": "Last Name",
-   "permlevel": 1
+   "label": "Last Name"
   },
   {
    "fieldname": "column_break_dhsp",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "user_bio",
-   "fieldtype": "Small Text",
-   "label": "User Bio"
   },
   {
    "fieldname": "offers_section",
@@ -55,7 +51,7 @@
    "label": "Profile Image"
   },
   {
-   "fetch_from": "taker_user.username",
+   "fetch_from": "user.username",
    "fieldname": "username",
    "fieldtype": "Data",
    "label": "Username",
@@ -64,17 +60,36 @@
    "unique": 1
   },
   {
-   "fieldname": "taker_user",
+   "fieldname": "user",
    "fieldtype": "Link",
-   "label": "Taker User",
-   "options": "Taker Profile",
-   "permlevel": 1,
-   "read_only": 1
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "bio",
+   "fieldtype": "Small Text",
+   "label": "Bio"
+  },
+  {
+   "fieldname": "column_break_yzqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "profile_image"
+  },
+  {
+   "fieldname": "taker_profile",
+   "fieldtype": "Link",
+   "label": "Taker Profile",
+   "options": "Taker Profile"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 16:59:09.925497",
+ "modified": "2024-11-20 14:38:29.015169",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Giver Profile",

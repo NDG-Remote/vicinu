@@ -6,7 +6,11 @@
  "engine": "InnoDB",
  "field_order": [
   "user",
-  "username"
+  "username",
+  "column_break_frje",
+  "column_break_xsme",
+  "profile_image",
+  "image"
  ],
  "fields": [
   {
@@ -20,11 +24,30 @@
    "fieldname": "username",
    "fieldtype": "Data",
    "label": "Username"
+  },
+  {
+   "fieldname": "profile_image",
+   "fieldtype": "Attach Image",
+   "label": "Profile Image"
+  },
+  {
+   "fieldname": "column_break_frje",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "profile_image"
+  },
+  {
+   "fieldname": "column_break_xsme",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 16:56:22.784090",
+ "modified": "2024-11-20 14:39:02.532935",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Taker Profile",
