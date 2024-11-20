@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:OFF-{user_name}-{product}-{#####}",
+ "autoname": "format:OFF-{user_name}-{product}-{######}",
  "creation": "2024-11-19 15:44:28.245816",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -31,6 +31,7 @@
    "default": "0",
    "fieldname": "is_available",
    "fieldtype": "Check",
+   "in_standard_filter": 1,
    "label": "Available"
   },
   {
@@ -135,7 +136,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 16:18:18.516201",
+ "modified": "2024-11-20 08:58:55.753843",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",
