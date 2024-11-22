@@ -7,6 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "offer_chat",
+  "offer",
   "message_owner_taker_profile",
   "column_break_covr",
   "datetime",
@@ -17,7 +18,8 @@
    "fieldname": "datetime",
    "fieldtype": "Datetime",
    "label": "Datetime",
-   "read_only": 1
+   "read_only": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "offer_chat",
@@ -25,7 +27,8 @@
    "in_standard_filter": 1,
    "label": "Offer Chat",
    "options": "Offer Chat",
-   "read_only": 1
+   "read_only": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "column_break_covr",
@@ -34,18 +37,27 @@
   {
    "fieldname": "message_text",
    "fieldtype": "Small Text",
-   "label": "Message Text"
+   "label": "Message Text",
+   "set_only_once": 1
   },
   {
    "fieldname": "message_owner_taker_profile",
    "fieldtype": "Link",
    "label": "Message Owner Taker Profile",
-   "options": "Taker Profile"
+   "options": "Taker Profile",
+   "set_only_once": 1
+  },
+  {
+   "fetch_from": "offer_chat.offer",
+   "fieldname": "offer",
+   "fieldtype": "Data",
+   "label": "Offer",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-21 15:14:56.385361",
+ "modified": "2024-11-22 12:23:51.721322",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Message",

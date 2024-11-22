@@ -8,7 +8,8 @@
  "field_order": [
   "message",
   "datetime",
-  "message_owner"
+  "message_owner",
+  "message_text"
  ],
  "fields": [
   {
@@ -30,12 +31,18 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Message Owner"
+  },
+  {
+   "fieldname": "message_text",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Message Text"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-11-19 17:12:43.736579",
+ "modified": "2024-11-22 12:43:33.868443",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Message Item",

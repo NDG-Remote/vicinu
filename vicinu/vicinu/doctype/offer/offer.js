@@ -3,15 +3,32 @@
 
 frappe.ui.form.on("Offer", {
 	refresh(frm) {
-		frm.add_custom_button(__("Start a Chat"), function () {
-			frappe.call({
-				method: "vicinu.api.create_offer_chat",
-				args: {
-					taker_user: frappe.session.user,
-                    giver_profile: frm.doc.giver_profile,
-                    offer: frm.doc.name,
-				},
-			});
+		frm.add_custom_button(__("Write a Message"), function () {
+            let d = new frappe.ui.Dialog({
+            title: 'Enter your message',
+            fields: [
+                {
+                    label: 'Message',
+                    fieldname: 'message',
+                    fieldtype: 'Small Text'
+                },
+            ],
+            size: 'small',
+            primary_action_label: __('Submit'),
+            primary_action(values) {
+                frappe.call({
+                    method: "vicinu.api.sent_message",
+                    args: {
+                        taker_user: frappe.session.user,
+                        giver_profile: frm.doc.giver_profile,
+                        offer: frm.doc.name,
+                        message: values.message,
+                    },
+                });
+                d.hide();
+            }
+        });
+        d.show();
 		});
 	},
 });

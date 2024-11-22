@@ -6,6 +6,9 @@ from frappe.model.document import Document
 
 
 class OfferChat(Document):
-    def before_naming(self):
-        user_name = frappe.get_value("User", self.owner, "username")
-        self.taker_user_name = user_name
+    def on_trash(self):
+        self.delete_messages()
+
+    def delete_messages(self):
+        for message in self.messages:
+            frappe.delete_doc("Message", message.message)
