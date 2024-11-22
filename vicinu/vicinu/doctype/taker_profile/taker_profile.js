@@ -111,10 +111,10 @@ frappe.ui.form.on("Taker Profile", {
                                         product: values.product,
                                         is_accessible: values.is_accessible,
                                         is_donation_required: values.is_donation_required,
-                                        description: values.description,
+                                        description: values.description ? values.description : "",
                                         is_unlimited: values.is_unlimited,
-                                        quantity: values.quantity || 0,
-                                        units: values.unit || "Units",
+                                        quantity: values.quantity ? values.quantity : 0,
+                                        units: values.units ? values.units : "Units",
                                     },
                                 });
                                 d.hide();

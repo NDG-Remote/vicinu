@@ -16,14 +16,18 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "reqd": 1
   },
   {
    "fetch_from": "user.username",
    "fieldname": "username",
    "fieldtype": "Data",
-   "label": "Username"
+   "in_list_view": 1,
+   "label": "Username",
+   "reqd": 1
   },
   {
    "fieldname": "profile_image",
@@ -47,7 +51,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-20 14:39:02.532935",
+ "modified": "2024-11-20 14:51:44.246097",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Taker Profile",

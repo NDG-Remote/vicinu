@@ -43,3 +43,19 @@ def create_offer(user, product, is_accessible, is_donation_required, description
     new_offer.units = units
     # new_offer.location = location
     new_offer.save()
+
+@frappe.whitelist()
+def create_offer_chat(taker_user, giver_profile, offer):
+    #! frappe.throw(f"{taker_user}")
+    #! taker_profile = "TAK-User10-00015"
+    taker_profile = frappe.db.get_value("Taker Profile", {"user": taker_user})
+    # frappe.throw(f"{taker_profile}, {giver_profile}, {offer}")
+    exists_chat = frappe.db.exists("Offer Chat", {"taker_profile": taker_profile, "giver_profile": giver_profile, "offer": offer})
+    if exists_chat:
+        frappe.throw(f"Chat already exists for this offer")
+    else:
+        new_offer_chat = frappe.new_doc("Offer Chat")
+        new_offer_chat.taker_profile = taker_profile
+        new_offer_chat.giver_profile = giver_profile
+        new_offer_chat.offer = offer
+        new_offer_chat.save()

@@ -23,7 +23,9 @@
   {
    "fieldname": "first_name",
    "fieldtype": "Data",
-   "label": "First name"
+   "in_list_view": 1,
+   "label": "First name",
+   "reqd": 1
   },
   {
    "fieldname": "last_name",
@@ -51,19 +53,24 @@
    "label": "Profile Image"
   },
   {
-   "fetch_from": "user.username",
+   "fetch_from": "taker_profile.username",
    "fieldname": "username",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Username",
    "read_only": 1,
+   "reqd": 1,
    "set_only_once": 1,
    "unique": 1
   },
   {
+   "fetch_from": "taker_profile.user",
    "fieldname": "user",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "User",
-   "options": "User"
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "bio",
@@ -83,13 +90,17 @@
   {
    "fieldname": "taker_profile",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Taker Profile",
-   "options": "Taker Profile"
+   "options": "Taker Profile",
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-20 14:38:29.015169",
+ "modified": "2024-11-20 15:06:50.012204",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Giver Profile",

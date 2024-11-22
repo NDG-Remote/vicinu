@@ -9,16 +9,20 @@
   "column_break_pxrx",
   "giver_profile",
   "product_section",
+  "offer",
+  "column_break_kuiz",
   "product",
-  "product_chat_section",
+  "offer_chat_section",
   "messages"
  ],
  "fields": [
   {
+   "fetch_from": "offer.product",
    "fieldname": "product",
-   "fieldtype": "Link",
+   "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Product",
-   "options": "Product"
+   "reqd": 1
   },
   {
    "fieldname": "column_break_pxrx",
@@ -32,34 +36,47 @@
   {
    "fieldname": "taker_profile",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Taker Profile",
-   "options": "Taker Profile"
+   "options": "Taker Profile",
+   "reqd": 1
   },
   {
-   "fetch_from": "product.giver_user_name",
    "fieldname": "giver_profile",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Giver Profile",
-   "options": "Giver Profile"
+   "options": "Giver Profile",
+   "reqd": 1
   },
   {
-   "fieldname": "product_chat_section",
+   "fieldname": "offer_chat_section",
    "fieldtype": "Section Break",
-   "label": "Product Chat"
+   "label": "Offer Chat"
   },
   {
    "fieldname": "messages",
    "fieldtype": "Table",
    "label": "Messages",
    "options": "Message Item"
+  },
+  {
+   "fieldname": "offer",
+   "fieldtype": "Link",
+   "label": "Offer",
+   "options": "Offer"
+  },
+  {
+   "fieldname": "column_break_kuiz",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-19 17:13:10.185387",
+ "modified": "2024-11-21 13:47:41.244261",
  "modified_by": "Administrator",
  "module": "Vicinu",
- "name": "Product Chat",
+ "name": "Offer Chat",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

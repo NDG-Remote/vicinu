@@ -5,7 +5,7 @@ import frappe
 from frappe.model.document import Document
 
 
-class ProductChat(Document):
+class OfferChat(Document):
     def before_naming(self):
         user_name = frappe.get_value("User", self.owner, "username")
         self.taker_user_name = user_name

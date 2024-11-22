@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:OFF-{user_name}-{product}-{######}",
+ "autoname": "format:OFF-{username}-{product}-{######}",
  "creation": "2024-11-19 15:44:28.245816",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -9,13 +9,14 @@
   "ownership_section",
   "giver_profile",
   "user",
+  "username",
   "product_section",
   "product",
+  "description",
   "column_break_cnwt",
   "is_available",
   "is_accessible",
   "is_donation_required",
-  "description",
   "quantity_section",
   "is_unlimited",
   "column_break_oxbn",
@@ -107,7 +108,8 @@
    "fieldtype": "Link",
    "label": "Giver Profile",
    "options": "Giver Profile",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "location_section",
@@ -148,7 +150,8 @@
    "fieldname": "user",
    "fieldtype": "Link",
    "label": "User",
-   "options": "User"
+   "options": "User",
+   "set_only_once": 1
   },
   {
    "fieldname": "image_1",
@@ -214,11 +217,18 @@
    "fieldname": "product_section",
    "fieldtype": "Section Break",
    "label": "Product"
+  },
+  {
+   "fetch_from": "user.username",
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username",
+   "set_only_once": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-20 14:35:30.819117",
+ "modified": "2024-11-20 14:58:18.834476",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",
