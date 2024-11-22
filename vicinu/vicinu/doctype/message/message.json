@@ -9,6 +9,7 @@
   "offer_chat",
   "offer",
   "message_owner_taker_profile",
+  "user",
   "column_break_covr",
   "datetime",
   "message_text"
@@ -53,11 +54,17 @@
    "fieldtype": "Data",
    "label": "Offer",
    "set_only_once": 1
+  },
+  {
+   "fetch_from": "message_owner_taker_profile.user",
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-22 12:23:51.721322",
+ "modified": "2024-11-22 14:07:08.791777",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Message",

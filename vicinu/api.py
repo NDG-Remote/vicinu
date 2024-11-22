@@ -44,7 +44,7 @@ def create_offer(user, product, is_accessible, is_donation_required, description
     # new_offer.location = location
     new_offer.save()
 
-@frappe.whitelist()
+# Create Chat if not existing yet and send message
 def get_taker_profile(taker_user):
     taker_profile = frappe.db.get_value("Taker Profile", {"user": taker_user})
     return taker_profile
@@ -64,9 +64,11 @@ def get_offer_chat(taker_user, giver_profile, offer):
     return offer_chat
 
 @frappe.whitelist()
-def sent_message(taker_user, giver_profile, offer, message):
-    create_offer_chat(taker_user, giver_profile, offer)
-    offer_chat = get_offer_chat(taker_user, giver_profile, offer)
+def sent_message(is_called_from_offer, offer_chat, taker_user, giver_profile, offer, message):
+    if is_called_from_offer == "true":
+        frappe.throw("if condition is true")
+        create_offer_chat(taker_user, giver_profile, offer)
+        offer_chat = get_offer_chat(taker_user, giver_profile, offer)
     taker_profile = get_taker_profile(taker_user)
     new_message = frappe.new_doc("Message")
     new_message.message_owner_taker_profile = taker_profile

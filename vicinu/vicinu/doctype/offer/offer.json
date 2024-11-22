@@ -227,8 +227,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-11-20 14:58:18.834476",
+ "links": [
+  {
+   "link_doctype": "Offer Chat",
+   "link_fieldname": "offer"
+  }
+ ],
+ "modified": "2024-11-22 14:31:09.474672",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",

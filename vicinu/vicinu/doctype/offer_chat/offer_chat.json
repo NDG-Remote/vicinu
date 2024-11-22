@@ -1,13 +1,15 @@
 {
  "actions": [],
- "autoname": "format:CHAT-{product}-Nr.{#####}",
+ "autoname": "format:CHAT-{offer}-Nr.{#####}",
  "creation": "2024-08-15 16:18:20.896168",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "taker_profile",
+  "taker_user",
   "column_break_pxrx",
   "giver_profile",
+  "giver_user",
   "product_section",
   "offer",
   "column_break_kuiz",
@@ -69,11 +71,23 @@
   {
    "fieldname": "column_break_kuiz",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "taker_profile.user",
+   "fieldname": "taker_user",
+   "fieldtype": "Data",
+   "label": "Taker User"
+  },
+  {
+   "fetch_from": "giver_profile.user",
+   "fieldname": "giver_user",
+   "fieldtype": "Data",
+   "label": "Giver User"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-21 13:47:41.244261",
+ "modified": "2024-11-22 14:07:51.478001",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer Chat",

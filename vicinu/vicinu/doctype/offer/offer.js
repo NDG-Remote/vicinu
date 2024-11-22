@@ -19,6 +19,8 @@ frappe.ui.form.on("Offer", {
                 frappe.call({
                     method: "vicinu.api.sent_message",
                     args: {
+                        is_called_from_offer: true,
+                        offer_chat: "",
                         taker_user: frappe.session.user,
                         giver_profile: frm.doc.giver_profile,
                         offer: frm.doc.name,
