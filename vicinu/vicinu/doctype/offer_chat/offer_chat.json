@@ -41,7 +41,8 @@
    "in_list_view": 1,
    "label": "Taker Profile",
    "options": "Taker Profile",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "giver_profile",
@@ -49,7 +50,8 @@
    "in_list_view": 1,
    "label": "Giver Profile",
    "options": "Giver Profile",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "offer_chat_section",
@@ -65,8 +67,10 @@
   {
    "fieldname": "offer",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Offer",
-   "options": "Offer"
+   "options": "Offer",
+   "set_only_once": 1
   },
   {
    "fieldname": "column_break_kuiz",
@@ -87,7 +91,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-22 14:07:51.478001",
+ "modified": "2024-11-23 12:57:36.700964",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer Chat",

@@ -19,7 +19,9 @@
    "in_list_view": 1,
    "label": "User",
    "options": "User",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
   },
   {
    "fetch_from": "user.username",
@@ -27,7 +29,9 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Username",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1,
+   "unique": 1
   },
   {
    "fieldname": "profile_image",
@@ -60,7 +64,7 @@
    "link_fieldname": "taker_profile"
   }
  ],
- "modified": "2024-11-22 14:37:59.884334",
+ "modified": "2024-11-23 13:01:22.481225",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Taker Profile",

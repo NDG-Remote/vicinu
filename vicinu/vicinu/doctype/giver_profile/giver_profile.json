@@ -45,7 +45,8 @@
    "fieldname": "offers",
    "fieldtype": "Table",
    "label": "Offers",
-   "options": "Offer Item"
+   "options": "Offer Item",
+   "read_only": 1
   },
   {
    "fieldname": "profile_image",
@@ -60,7 +61,6 @@
    "label": "Username",
    "read_only": 1,
    "reqd": 1,
-   "set_only_once": 1,
    "unique": 1
   },
   {
@@ -69,6 +69,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "User",
+   "read_only": 1,
    "reqd": 1,
    "set_only_once": 1
   },
@@ -109,7 +110,7 @@
    "link_fieldname": "giver_profile"
   }
  ],
- "modified": "2024-11-22 14:30:37.416254",
+ "modified": "2024-11-23 13:02:27.009627",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Giver Profile",

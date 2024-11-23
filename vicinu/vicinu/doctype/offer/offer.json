@@ -45,6 +45,7 @@
    "default": "0",
    "fieldname": "is_available",
    "fieldtype": "Check",
+   "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Available"
   },
@@ -66,7 +67,8 @@
    "in_list_view": 1,
    "label": "Product",
    "options": "Product",
-   "reqd": 1
+   "reqd": 1,
+   "set_only_once": 1
   },
   {
    "fieldname": "description",
@@ -106,6 +108,7 @@
   {
    "fieldname": "giver_profile",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Giver Profile",
    "options": "Giver Profile",
    "reqd": 1,
@@ -149,6 +152,7 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "User",
    "options": "User",
    "set_only_once": 1
@@ -223,7 +227,7 @@
    "fieldname": "username",
    "fieldtype": "Data",
    "label": "Username",
-   "set_only_once": 1
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
@@ -233,7 +237,7 @@
    "link_fieldname": "offer"
   }
  ],
- "modified": "2024-11-22 14:31:09.474672",
+ "modified": "2024-11-23 12:59:47.121238",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",
