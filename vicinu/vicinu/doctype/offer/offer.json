@@ -231,13 +231,8 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Offer Chat",
-   "link_fieldname": "offer"
-  }
- ],
- "modified": "2024-11-23 12:59:47.121238",
+ "links": [],
+ "modified": "2024-11-20 14:58:18.834476",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Offer",

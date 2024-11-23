@@ -54,17 +54,8 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [
-  {
-   "link_doctype": "Giver Profile",
-   "link_fieldname": "taker_profile"
-  },
-  {
-   "link_doctype": "Offer Chat",
-   "link_fieldname": "taker_profile"
-  }
- ],
- "modified": "2024-11-23 13:01:22.481225",
+ "links": [],
+ "modified": "2024-11-20 14:51:44.246097",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Taker Profile",
