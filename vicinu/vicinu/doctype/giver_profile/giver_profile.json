@@ -99,8 +99,17 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-11-20 15:06:50.012204",
+ "links": [
+  {
+   "link_doctype": "Offer",
+   "link_fieldname": "giver_profile"
+  },
+  {
+   "link_doctype": "Offer Chat",
+   "link_fieldname": "giver_profile"
+  }
+ ],
+ "modified": "2024-11-22 14:30:37.416254",
  "modified_by": "Administrator",
  "module": "Vicinu",
  "name": "Giver Profile",
