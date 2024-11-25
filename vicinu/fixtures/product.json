@@ -178,13 +178,6 @@
   "description": null,
   "docstatus": 0,
   "doctype": "Product",
-  "modified": "2024-11-19 16:30:18",
-  "name": "Onions"
- },
- {
-  "description": null,
-  "docstatus": 0,
-  "doctype": "Product",
   "modified": "2024-11-19 16:30:19",
   "name": "Garlic"
  },
@@ -208,5 +201,12 @@
   "doctype": "Product",
   "modified": "2024-11-19 16:30:26",
   "name": "Bell Peppers"
+ },
+ {
+  "description": null,
+  "docstatus": 0,
+  "doctype": "Product",
+  "modified": "2024-11-19 16:30:18",
+  "name": "Onions"
  }
 ]
