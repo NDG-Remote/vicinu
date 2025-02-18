@@ -1,6 +1,9 @@
 ### Vicinu
 
-Web and Mobile App for food sharing and against food wasting
+Frappe Framework backend for the Vicinu mobile app – a platform for fruit sharing and reducing food waste.
+
+### Prerequisits
+Frappe Framework local environment: Follow the [official installation](https://docs.frappe.io/framework/user/en/installation) guide to set up Frappe on your system.
 
 ### Installation
 
